@@ -31,9 +31,9 @@ jobs:
 
       # Build & Test
       - name: Build
-        run: dotnet build /SecureWebApp.csproj --configuration Release
+        run: dotnet build /SecureWebApp/SecureWebApp.csproj --configuration Release
       - name: Test
-        run: dotnet test /SecureWebApp.csproj --configuration Release
+        run: dotnet test /SecureWebApp/SecureWebApp.csproj --configuration Release
 
       # CodeQL Analysis
       - name: Perform CodeQL Analysis
